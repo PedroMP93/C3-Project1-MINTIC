@@ -1,1 +1,22 @@
-
+h1{
+    color: black;
+    border-style: solid;
+    border-width: medium;
+    border-color: green; 
+    background-color: #6a9289;
+    display: flex; 
+    justify-content: center;   
+}
+section{
+    background:	#758d88;
+    margin-top: 20px;
+    padding: 10px; 
+    color: rgb(19, 14, 14);   
+}
+#btn-submit-form{
+    width: 200px; 
+    justify-content: center;
+}
+#btn-submit-form:hover{
+    background: #00538A;       
+}
