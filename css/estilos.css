@@ -14,7 +14,8 @@ section{
     padding: 10px; 
     color: rgb(19, 14, 14);   
 }
-#btn-submit-form{
+#btn-submit-form{    
+    background-color: #5483ac;
     width: 200px; 
     justify-content: center;
 }
