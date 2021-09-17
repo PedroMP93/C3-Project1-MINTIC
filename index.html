@@ -1,61 +1,65 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <title>Bienvenido a Famifarma</title>
-        <style>
-        body {margin:0;}
-            ul {
-              list-style-type: none;
-              margin: 0;
-              padding: 5px;
-              overflow: hidden;
-              background-color: #008ddf;
-              /* position: fixed;
-              top: 0;
-              width: 100%;*/
-            }
-            
-            li {
-              float: left;
-            }
-            
-            li a {
-              display: block;
-              color: white;
-              text-align: center;
-              padding: 14px 16px;
-              text-decoration: none;
-            }
-            
-            li a:hover {
-              background-color: #005189;
-            }
+      
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <link href="css/estilos.css" rel="stylesheet">
+      <link rel="stylesheet" href="css/bootstrap.min.css">
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script> 
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script> 
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 
-            .active {
-              background-color: #d8012a;
-            }
-
-            .boton a { 
-              
-              display: block;
-              /* background-color: #008ddf; */
-              color: #005189;
-              padding: 14px 16px;
-              text-decoration: none;
-              
-            }
-
-            </style>
+      <title>Bienvenido a Famifarma</title>
+        
     </head>
     <body>
-        <ul>
-            <li><img src="imgs/3.png" alt="logo" style="width:265px;height:45px;"></li>
-            <li><a class="active" href="#home">Inicio</a></li>
-            <li><a href="#tienda">Tienda Virtual</a></li>
-            <li><a href="#acerca">Acerca de</a></li>
-            <button class="boton" id=“btn-registrar” ><a href="registro.html">Registrarse</a></button>
-        </ul>
-        <h1>Esto es un título</h1>
-        <p>Esto es un párrafo</p>
+      <!--Imagen principal--> 
+    
+    <div class="container mt-5">
+      <div class="row">
+          <div class="col-md-12">
+              <div id="demo" class="carousel slide" data-ride="carousel">
+
+                  <!-- Indicadores -->
+                  <ul class="carousel-indicators">
+                    <li data-target="#demo" data-slide-to="0" class="active"></li>
+                    <li data-target="#demo" data-slide-to="1"></li>
+                    <li data-target="#demo" data-slide-to="2"></li>
+                  </ul>
+                
+                  <!-- las imagenes -->
+                  <div class="carousel-inner">
+                    <div class="carousel-item active">
+                      <img src="imgs/farmacia1.jpg" alt="imagen 1">
+                    </div>
+                    <div class="carousel-item">
+                      <img src="imgs/farmacia2.jpg" alt="imagen 2">
+                    </div>
+                    <div class="carousel-item">
+                      <img src="imgs/farmacia3.jpg" alt="imagen 3">
+                    </div>
+                  </div>
+                
+                  <!-- los controles para mover las imagenes -->
+                  <a class="carousel-control-prev" href="#demo" data-slide="prev">
+                    <span class="carousel-control-prev-icon"></span>
+                  </a>
+                  <a class="carousel-control-next" href="#demo" data-slide="next">
+                    <span class="carousel-control-next-icon"></span>
+                  </a>
+                
+                </div>
+
+      <nav>
+        <div class="container">
+            <a><img src="imgs/2.png" alt="Logo" id="principal_logo"></a> 
+            <a href="#" class="active" id="btn-registrar">Inicio</a>
+            <a href="#" id="btn-registrar">Nosotros</a>
+            <a href="registro.html" id="btn-registrar">Registrarse</a>        
+        </div>
+      </nav>
+
     </body>
 </html>
