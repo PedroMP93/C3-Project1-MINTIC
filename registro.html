@@ -1,47 +1,51 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <title></title>
         <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
         <link href="./css/estilos.css" rel="stylesheet">
         <link rel="stylesheet" href="css/bootstrap.min.css">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script> 
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script> 
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+        
+        <title>Registo Usuario</title>
     </head>
     <body>
-
-       <!--formulario-->
-
-    <section class="container"> 
-        <h1>Registro Nuevo Usuario</h1>
-        <div class="row">
-            <div class="div-form col-md-5"> 
-                <form action="" id="form-registro">
-                    <div class="form-group">
-                        <label for="Username">Username</label>
-                        <input type="text" placeholder="Escriba su usuario" id="username" class="form-control"> 
-                    </div>
-                    <div class="form-group">
-                        <label for="Email">Email</label>
-                        <input type="email" placeholder="Escriba su correo" id="email" class="form-control">
-                    </div>
-                    <div class="form-group">
-                        <label for="Clave">Contraseña</label>
-                        <input type="password" id="contrasena" class="form-control">
-                    </div>
-                    <div class="form-group">
-                        <label for="Confirmar Clave">Confirmar Contraseña</label>
-                        <input type="password" id="confirmarContrasena" class="form-control">
-                    </div>
-                    <div class="form-group">
-                    <!--<input type="submit" value="Registrar"-->
-                     <input class="btn btn-info center-btn" type="submit" id="btn-submit-form" value="Registrar">
-                    </div>
-                </form>
-            </div>
-        </div>        
-    </section>    
+        <h1>Registro Nuevo Usuario</h1>        
+        
+        <!--formulario-->
+        <section class="container"> 
+            <h1>Registro Nuevo Usuario</h1>
+            
+            <div class="row">
+                <div class="div-form col-md-5"> 
+                    <form id="form-registro" action="#">
+                        <div class="form-group">
+                            <label for="username">Username</label>
+                            <input type="text" id="username" class="form-control" name="registro_usuario"> 
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" class="form-control" name="registro_usuario">
+                        </div>
+                        <div class="form-group">
+                            <label for="contrasena">Contraseña</label>
+                            <input type="password" id="contrasena" class="form-control" name="registro_usuario">
+                        </div>
+                        <div class="form-group">
+                            <label for="confirmarContrasena">Confirmar Contraseña</label>
+                            <input type="password" id="confirmarContrasena" class="form-control" name="registro_usuario">
+                        </div>
+                        <div class="form-group">
+                            <input type="submit" id="btn-submit-form" value="Registrar" class="btn btn-info center-btn" name="registro_usuario">
+                        </div>
+                    </form>
+                </div>
+            </div>        
+        </section>
+    </body>
 </html>
