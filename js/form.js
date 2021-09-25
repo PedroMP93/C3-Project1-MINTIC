@@ -1,7 +1,7 @@
 function checkUsername(valor){
-    if(valor !=""){
+    if(valor!=""){
         if ((/^\w+([\.-]?)\w+/).test(valor)){
-            if(valor.lenght<30){
+            if(valor.length <= 30){
                 return true;
             }
             else {
@@ -32,7 +32,7 @@ function checkCorreo(valor){
 }
 
 function checkContrasena(valor){
-
+    
 }
 
 function checkConfirmContrasena(valor1, valor2){
