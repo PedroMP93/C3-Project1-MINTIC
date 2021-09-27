@@ -32,7 +32,22 @@ function checkCorreo(valor){
 }
 
 function checkContrasena(valor){
-    
+    if(valor!=""){
+        if(/^(?=.\d)(?=.[a-zñ]).*[A-ZÑ]/.test(valor)){
+            if (valor.length >=8){
+                return true;
+            }
+            else {
+                false;
+            }
+        }
+        else {
+            return false;
+        }
+    }
+    else {
+        return false;
+    }
 }
 
 function checkConfirmContrasena(valor1, valor2){
@@ -61,4 +76,5 @@ function checkConfirmContrasena(valor1, valor2){
 
 module.exports.checkUsername = checkUsername;
 module.exports.checkCorreo = checkCorreo;
+module.exports.checkContrasena = checkContrasena;
 module.exports.checkConfirmContrasena = checkConfirmContrasena;
