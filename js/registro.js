@@ -1,4 +1,4 @@
-function crearRegistro(){
+function agregarRegistro(){
 
 }
 
