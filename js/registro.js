@@ -19,6 +19,13 @@ function agregarRegistro(){
 }
 
 function obtenerUsername(arreglo){
+    if (/^\w+([\.-]?)\w+/.test(arreglo)){
+        console.log("Positivo");
+        return true;
+    }
+    else{
+        console.log("Falló");
+    }
 
 }
  
@@ -35,4 +42,5 @@ function listarRegistro(arreglo){
     }
 }
 
-module.export.agregarRegistro = agregarRegistro;
+module.exports.agregarRegistro = agregarRegistro;
+module.exports.obtenerUsername = obtenerUsername;
