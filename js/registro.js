@@ -19,15 +19,22 @@ function agregarRegistro(){
 }
 
 function obtenerUsername(arreglo){
-    if (/^\w+([\.-]?)\w+/.test(arreglo)){
-        console.log("Positivo");
+    let usuario = [];       
+
+    arreglo.forEach((e) => {
+        if (/^[a-zA-Z0-9]+$/i.test(e.Username)) usuario.push(e.Username)
+    }); 
+    console.log(usuario);
+    
+
+    if (arreglo.length<30){
         return true;
     }
     else{
-        console.log("Falló");
-    }
-
+        return false;
+    }    
 }
+
     
 function filtrarCorreo(arreglo){
     let arreglo2 = [];
