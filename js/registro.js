@@ -19,20 +19,13 @@ function agregarRegistro(){
 }
 
 function obtenerUsername(arreglo){
-    let usuario = [];       
+let usuario = [];
 
-    arreglo.forEach((e) => {
-        if (/^[a-zA-Z0-9]+$/i.test(e.Username)) usuario.push(e.Username)
-    }); 
-    console.log(usuario);
+arreglo.forEach((e) => {
+    if (/^[a-zA-Z0-9]+$/.test(e.Username)) usuario.push(e.Username)
+});
     
-
-    if (arreglo.length<30){
-        return true;
-    }
-    else{
-        return false;
-    }    
+console.log(usuario);         
 }
 
     
