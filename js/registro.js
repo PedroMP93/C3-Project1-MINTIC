@@ -19,13 +19,15 @@ function agregarRegistro(){
 }
 
 function obtenerUsername(arreglo){
-let usuario = [];
+    let usuarios = [];
+    for (const user of registros){
+        if(user.username.match(/[0-9]/g)){
 
-arreglo.forEach((e) => {
-    if (/^[a-zA-Z0-9]+$/.test(e.Username)) usuario.push(e.Username)
-});
-    
-console.log(usuario);         
+            usuarios.push(user);
+        }
+    }
+    console.log(usuarios);
+    return usuarios;         
 }
 
     
