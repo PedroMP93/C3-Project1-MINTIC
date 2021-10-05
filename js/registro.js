@@ -35,16 +35,15 @@ function obtenerUsername(arreglo){
  
 function filtrarCorreo(arreglo){
 
-    registros.forEach(element => console.log(element));
-            
-    if (/@hotmail.com/.test(registros)) {
-        console.log ("encontrados correos hotmail.com");
-        return true;
+    
+let arreglo2 = [];
+for (const correo of registros) {
+    if (correo.correo.indexOf("hotmail.com") >= 0) {
+        arreglo2.push(correo);
     }
-    else {
-        console.log ("no hay correos hotmail.com")
-        return false;
-    }
+}    
+console.log(arreglo2);
+return arreglo2;
     
 
 }
@@ -53,3 +52,4 @@ module.exports.registros = registros;
 module.exports.agregarRegistro = agregarRegistro;
 module.exports.obtenerUsername = obtenerUsername;
 module.exports.filtrarCorreo = filtrarCorreo;
+
