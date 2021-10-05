@@ -1,21 +1,25 @@
-const arregloRegistros = [];
+var registros = [];
 
 function agregarRegistro(){
 
-    var x = document.getElementById("form-registro");
-    let username = x.elements[0].value ;
-    let correo = x.elements[1].value;
-    let contrasena = x.elements[2].value;
+    // let username = document.getElementById("username").value;
+    // registros.push(username);
 
-    //Se crea el registro de un nuevo usuario como objeto
-    var registro = {username: username, correo:correo, contrasena:contrasena};
+    let username = document.getElementById("username").value ;
+    // let correo = document.getElementById("email").value;
+    // let contrasena = document.getElementById("contrasena").value;
 
-    //Registro se agrega al arreglo
-    arregloRegistros.push(registro);
+    // Se crea el registro de un nuevo usuario como objeto
+    // var registro = {username: username, correo: correo, contrasena: contrasena};
 
-    console.log("El registro es: "+registro.username+" y correo: "+registro.correo);
-    //console.log(arregloRegistros);
-    listarRegistro(arregloRegistros);
+    // Registro se agrega al arreglo
+    registros.push(username);
+    // registros.push(correo);
+    // registros.push(contrasena);
+
+    // console.log("El registro es: "+registro.username+" y correo: "+registro.correo);
+    // console.log(arregloRegistros);
+    // listarRegistro(arregloRegistros);
 }
 
 function obtenerUsername(arreglo){
@@ -31,9 +35,9 @@ function obtenerUsername(arreglo){
  
 function filtrarCorreo(arreglo){
 
-    arregloRegistros.forEach(element => console.log(element));
+    registros.forEach(element => console.log(element));
             
-    if (/@hotmail.com/.test(arregloRegistros)) {
+    if (/@hotmail.com/.test(registros)) {
         console.log ("encontrados correos hotmail.com");
         return true;
     }
@@ -45,17 +49,7 @@ function filtrarCorreo(arreglo){
 
 }
 
-function listarRegistro(arreglo){
-    if(arreglo.length != null){
-        for(let i=0; i<arreglo.length; i++){
-            let registro = arreglo[i];
-            console.log(arreglo[i] + "<br>");
-        }
-    }
-}
-
+module.exports.registros = registros;
 module.exports.agregarRegistro = agregarRegistro;
 module.exports.obtenerUsername = obtenerUsername;
 module.exports.filtrarCorreo = filtrarCorreo;
-
-
