@@ -2,8 +2,8 @@ h1{
     color: white;
     border-style: solid;
     border-width: medium;
-    border-color: green; 
-    background-color: #00538A;
+    border-color: #1ca6e5; 
+    background-color: #163173;
     display: flex; 
     justify-content: center;
     padding: 5px;   
@@ -23,6 +23,43 @@ section{
     background: #00538A;       
 }
 /* este css pertenece al index */
+#home{
+    display: inline-block;     
+    background: #427EB3; 
+    color: black;
+    padding: 10px 25px;
+    text-decoration: none; 
+    margin: 10px;
+}
+#home:hover{ 
+    background: aqua;
+}
+
+#nosotros{
+    display: inline-block;     
+    background: #427EB3; 
+    color: black;   
+    padding: 10px 25px;
+    text-decoration: none; 
+    margin: 5px;
+}
+#nosotros:hover{ 
+    background: aqua;
+}
+
+
+#productos{
+    display: inline-block;     
+    background: #427EB3; 
+    color: black;   
+    padding: 10px 25px;
+    text-decoration: none; 
+    margin: 5px;
+}
+#productos:hover{ 
+    background: aqua;
+}
+
 #btn-registrar{
     display: inline-block;     
     background: #427EB3; 
@@ -35,8 +72,9 @@ section{
     background: aqua;
 }
 nav{
-    background-color: #6992D6;
-    padding: 15px;
+    background-color: #163173;
+    height: 200px;
+    padding: 10px;
     display: flex; 
     justify-content: center;
 }
